@@ -1,0 +1,42 @@
+[
+    {   "id":1,
+        "image":"https://picsum.photos/200/300",
+        "text": "Tekst 1",
+        "flipped":false
+    },
+    {   "id":2,
+        "image":"https://picsum.photos/200/300",
+        "text": "Tekst 2",
+        "flipped":false
+    },
+    {   "id":3,
+        "image":"https://picsum.photos/200/300",
+        "text": "Tekst 3",
+        "flipped":false
+    },
+    {   "id":4,
+        "image":"https://picsum.photos/200/300",
+        "text": "Tekst 4",
+        "flipped":false
+    },
+    {   "id":5,
+        "image":"https://picsum.photos/200/300",
+        "text": "Tekst 5",
+        "flipped":false
+    },
+    {   "id":6,
+        "image":"https://picsum.photos/200/300",
+        "text": "Tekst 6",
+        "flipped":false
+    },
+    {   "id":7,
+        "image":"https://picsum.photos/200/300",
+        "text": "Tekst 7",
+        "flipped":false
+    },
+    {   "id":8,
+        "image":"https://picsum.photos/200/300",
+        "text": "Tekst 8",
+        "flipped":false
+    }
+]
