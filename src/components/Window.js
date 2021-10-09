@@ -1,13 +1,14 @@
-const Window = ({image, text, flipped, id, toggle}) => {
 
-    let bgImage = {
-        backgroundImage:"url(" + { image } + ")",
-        width:"100px"
-    }
 
+const Window = ({photo, breed, flipped, id, toggle, uiData}) => {
+
+    console.log(photo)
     return(
-        <div className="window">
-            {flipped? <p  onClick={() =>toggle(id)} className="windowText">{text}</p>: <img  onClick={() =>toggle(id)} className="image" alt="image" src={image}  style={bgImage}></img>}
+        <div className="window" style={uiData}>
+            {flipped? 
+            <div className="inner" onClick={() =>toggle(id)}><p className="windowText">{breed}</p></div>: 
+            <div className="inner" onClick={() =>toggle(id)}><img className="image" alt="image" src={photo} ></img></div>
+            }
         </div>
     )
     

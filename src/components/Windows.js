@@ -5,7 +5,16 @@ const Windows = ({windows, toggle}) =>{
     return(
         <div className="windowWrapper">
             {windows.map(item =>{
-                return(<Window key={item.id} text={item.text} image={item.image} flipped={item.flipped} id={item.id} toggle={toggle} />)
+                return(
+                    <Window 
+                        key={item.id} 
+                        breed={item.breed} 
+                        photo={item.photo} 
+                        flipped={item.flipped} 
+                        id={item.id} 
+                        toggle={toggle} 
+                        uiData={item.flipped === true? {border:"3px solid green"}:{border:"1px solid black"}} 
+                    />)
                 
             })}
         </div>
