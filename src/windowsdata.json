@@ -9,7 +9,8 @@
         "hypoallergenic": "No",
         "intelligence": 7,
         "photo": "/images/labroador.jpg",
-        "flipped":false
+        "flipped":false,
+        "locked":false
     }, {
         "id":2,
         "breed": "German Shepard",
@@ -20,7 +21,8 @@
         "hypoallergenic": "No",
         "intelligence": 3,
         "photo": "/images/shepard.jpg",
-        "flipped":false
+        "flipped":false,
+        "locked":false
     }, {
         "id":3,
         "breed": "Golden Retriever",
@@ -31,7 +33,8 @@
         "hypoallergenic": "No",
         "intelligence": 4,
         "photo": "/images/retriver.jpg",
-        "flipped":false
+        "flipped":false,
+        "locked":false
     }, {
         "id":4,
         "breed": "French Bulldog",
@@ -42,7 +45,8 @@
         "hypoallergenic": "No",
         "intelligence": 58,
         "photo": "/images/bulldog.jpg",
-        "flipped":false
+        "flipped":false,
+        "locked":false
 
     }, {
         "id":5,
@@ -54,7 +58,8 @@
         "hypoallergenic": "No",
         "intelligence": 77,
         "photo": "/images/bulldog2.jpg",
-        "flipped":false
+        "flipped":false,
+        "locked":false
 
     }, {
         "id":6,
@@ -66,7 +71,8 @@
         "hypoallergenic": "No",
         "intelligence": 72,
         "photo": "/images/beagle.jpg",
-        "flipped":false
+        "flipped":false,
+        "locked":false
 
     }, {
         "id":7,
@@ -78,7 +84,8 @@
         "hypoallergenic": "Yes",
         "intelligence": 2,
         "photo": "/images/poodle.jpg",
-        "flipped":false
+        "flipped":false,
+        "locked":false
 
     }, {
         "id":8,
@@ -90,7 +97,8 @@
         "hypoallergenic": "No",
         "intelligence": 9,
         "photo": "/images/rottweiler.jpg",
-        "flipped":false
+        "flipped":false,
+        "locked":false
 
     }, {
         "id":9,
@@ -102,7 +110,8 @@
         "hypoallergenic": "No",
         "intelligence": 9,
         "photo": "/images/gsp.jpg",
-        "flipped":false
+        "flipped":false,
+        "locked":false
 
     }, {
         "id":10,
@@ -114,7 +123,8 @@
         "hypoallergenic": "Yes",
         "intelligence": 27,
         "photo": "images/yt.jpg",
-        "flipped":false
+        "flipped":false,
+        "locked":false
 
     }, {
         "id":11,
@@ -126,7 +136,8 @@
         "hypoallergenic": "No",
         "intelligence": 48,
         "photo": "images/boxer.jpg",
-        "flipped":false
+        "flipped":false,
+        "locked":false
 
     }
 ]

@@ -10,7 +10,8 @@ const Windows = ({windows, toggle}) =>{
                         key={item.id} 
                         breed={item.breed} 
                         photo={item.photo} 
-                        flipped={item.flipped} 
+                        flipped={item.flipped}
+                        locked={item.locked} 
                         id={item.id} 
                         toggle={toggle} 
                         uiData={item.flipped === true? {border:"3px solid green"}:{border:"1px solid black"}} 

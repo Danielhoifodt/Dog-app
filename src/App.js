@@ -12,13 +12,27 @@ function App() {
   const [windows, setWindow] = useState(windowsdata)
 
   const toggleFlipped = (id) =>{
-      setWindow(windows.map(item => item.id === id ? {...item, flipped: !item.flipped} : item))
+    console.log(id)
+      setWindow((windows) =>windows.map(item => item.id === id ? {...item, flipped: !item.flipped} : item))
+      lockWindows(id)
+      setTimeout(()=>flipBack(id), 3000)
+  }
+  const lockWindows = (id)=>{
+    setWindow((windows)=>windows.map(item => item.id !== id ? {...item, locked: true}: item))
+  }
+  const flipBack =(id) =>{
+    setWindow((windows)=>windows.map(item => item.id === id ? {...item, flipped: false}: item))
+    openWindows()
+  }
+  const openWindows = (id)=>{
+    setWindow(windows.map(item => item.id !== id ? {...item, locked: false}: item))
   }
 
   return (
-    <div className="container-fluid">
+    <div className="container">
       <Header search={setSearchTerm}/>
-      <Windows toggle={toggleFlipped} 
+      <Windows 
+      toggle={toggleFlipped} 
       windows={
       windows.filter(item => {
       if(searchTerm === "")
