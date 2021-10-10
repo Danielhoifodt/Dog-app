@@ -25,7 +25,7 @@ function App() {
     openWindows()
   }
   const openWindows = (id)=>{
-    setWindow(windows.map(item => item.id !== id ? {...item, locked: false}: item))
+    setWindow((windows)=>windows.map(item => item.id !== id ? {...item, locked: false}: item))
   }
 
   return (
