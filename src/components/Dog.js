@@ -1,4 +1,4 @@
-const Window = ({
+const Dog = ({
   photo,
   breed,
   flipped,
@@ -31,4 +31,4 @@ const Window = ({
   );
 };
 
-export default Window;
+export default Dog;

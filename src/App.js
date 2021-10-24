@@ -1,46 +1,43 @@
 import { useState } from 'react';
 import Header from './components/Header';
-import Windows from './components/Windows';
+import Dogs from './components/Dogs';
+
+import dogData from './data/dogdata.json';
+
 import './App.css';
-import windowsdata from './windowsdata.json';
 
 function App() {
   const [searchTerm, setSearchTerm] = useState('');
-
-  const [windows, setWindow] = useState(windowsdata);
+  const [dogs, setDog] = useState(dogData);
 
   const toggleFlipped = (id) => {
     console.log(id);
-    setWindow((windows) =>
-      windows.map((item) =>
+    setDog((dogs) =>
+      dogs.map((item) =>
         item.id === id ? { ...item, flipped: !item.flipped } : item
       )
     );
-    lockWindows(id);
+    lockDogs(id);
     setTimeout(() => flipBack(id), 3000);
   };
-  const lockWindows = (id) => {
-    setWindow((windows) =>
-      windows.map((item) => (item.id !== id ? { ...item, locked: true } : item))
+  const lockDogs = (id) => {
+    setDog((dogs) =>
+      dogs.map((item) => (item.id !== id ? { ...item, locked: true } : item))
     );
   };
   const flipBack = (id) => {
-    setWindow((windows) =>
-      windows.map((item) =>
-        item.id === id ? { ...item, flipped: false } : item
-      )
+    setDog((dogs) =>
+      dogs.map((item) => (item.id === id ? { ...item, flipped: false } : item))
     );
-    openWindows();
+    openDogs();
   };
-  const openWindows = (id) => {
-    setWindow((windows) =>
-      windows.map((item) =>
-        item.id !== id ? { ...item, locked: false } : item
-      )
+  const openDogs = (id) => {
+    setDog((dogs) =>
+      dogs.map((item) => (item.id !== id ? { ...item, locked: false } : item))
     );
   };
 
-  const filteredDogs = windows.filter((item) => {
+  const filteredDogs = dogs.filter((item) => {
     if (searchTerm === '') {
       return item;
     } else if (item.breed.toLowerCase().includes(searchTerm.toLowerCase())) {
@@ -52,7 +49,7 @@ function App() {
   return (
     <div className="container">
       <Header search={setSearchTerm} />
-      <Windows toggle={toggleFlipped} dogs={filteredDogs} />
+      <Dogs toggle={toggleFlipped} dogs={filteredDogs} />
     </div>
   );
 }

@@ -1,11 +1,11 @@
-import Window from './Window';
+import Dog from './Dog';
 
-const Windows = ({ dogs, toggle }) => {
+const Dogs = ({ dogs, toggle }) => {
   return (
     <div className="windowWrapper">
       {dogs.map((item) => {
         return (
-          <Window
+          <Dog
             key={item.id}
             breed={item.breed}
             photo={item.photo}
@@ -26,4 +26,4 @@ const Windows = ({ dogs, toggle }) => {
   );
 };
 
-export default Windows;
+export default Dogs;
