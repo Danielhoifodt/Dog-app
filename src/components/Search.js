@@ -21,6 +21,11 @@ const Search = ({ setSearchTerm }) => {
       setError('Search input can only be text');
     }
   };
+
+  const resetSearch = () =>{
+    setSearchTerm('');
+  };
+
   return (
     <>
       <div className="mt-4" id="navbarSupportedContent">
@@ -40,11 +45,18 @@ const Search = ({ setSearchTerm }) => {
           />
           <button
             disabled={!search}
-            className="btn btn-outline-success"
+            className="btn btn-outline-success me-2"
             type="submit"
             onClick={submitSearch}
           >
             Search
+          </button>
+          <button
+            className="btn btn-outline-danger"
+            type="button"
+            onClick={resetSearch}
+          >
+            Reset
           </button>
         </form>
       </div>
