@@ -1,4 +1,4 @@
-const Dog = ({
+const SingleDog = ({
   photo,
   breed,
   flipped,
@@ -31,4 +31,4 @@ const Dog = ({
   );
 };
 
-export default Dog;
+export default SingleDog;

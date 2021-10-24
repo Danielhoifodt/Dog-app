@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import Header from './components/Header';
-import Dogs from './components/Dogs';
+import ListDogs from './components/ListDogs';
+import Search from './components/Search';
 
 import dogData from './data/dogdata.json';
 
@@ -48,8 +49,9 @@ function App() {
 
   return (
     <div className="container">
-      <Header search={setSearchTerm} />
-      <Dogs toggle={toggleFlipped} dogs={filteredDogs} />
+      <Header />
+      <Search setSearchTerm={setSearchTerm}/>
+      <ListDogs toggle={toggleFlipped} dogs={filteredDogs} />
     </div>
   );
 }
