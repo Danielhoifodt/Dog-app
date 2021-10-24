@@ -15,7 +15,9 @@ const Search = ({ setSearchTerm }) => {
     // Check if the input has text and only contains text
     if (search.length !== 0 && onlyText(search)) {
       setSearchTerm(search);
+      setError();
     } else {
+      setSearchTerm('');
       setError('Search input can only be text');
     }
   };
