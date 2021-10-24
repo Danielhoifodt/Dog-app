@@ -12,10 +12,10 @@ const Window = ({
         <div className="window" style={uiData}>
             {
             locked?
-            <div className="inner"><img className="image" alt="image" src={photo} ></img></div>:
+            <div className="inner"><img className="image" alt="Dog" src={photo} ></img></div>:
             flipped? 
             <div className="inner" onClick={() =>toggle(id)}><p className="windowText">{breed}<br/>Intelligence: {intelligence}</p></div>: 
-            <div className="inner" onClick={() =>toggle(id)}><img className="image" alt="image" src={photo} ></img></div>
+            <div className="inner" onClick={() =>toggle(id)}><img className="image" alt="Dog" src={photo} ></img></div>
             }
         </div>
     )
